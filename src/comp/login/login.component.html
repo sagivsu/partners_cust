@@ -1,0 +1,21 @@
+<div>
+    <h3 class="pt-25">{{pageTitle}}</h3>
+    <hr class="col-6"/>
+    <pre></pre>
+    <div class="col-6">
+        <form [formGroup]="fg" (ngSubmit)="doSubmit()" novalidate>
+        <div class="box-100">
+        <div class="row col-7">    
+            <span>User Id:</span><span><input formControlName="identity" class="form-control col-2" maxlength="9" type="text"/></span>
+        </div>
+        <p class="error" *ngIf="errorCode === '1'">*Required field</p> 
+        <p class="error" *ngIf="errorCode === '2'">Identity number is invalid</p>
+        <p class="error" *ngIf="errorCode === '3'">Not authorized</p> 
+        <p></p> 
+        </div>
+        <div class="row col-3 align-text-left pl-5">          
+            <button class="btn btn-success" type="submit" [disabled]="!fg.valid">Submit</button>
+        </div>         
+    </form>     
+    </div>    
+</div>

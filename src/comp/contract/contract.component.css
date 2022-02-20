@@ -1,0 +1,9 @@
+.dataItem{
+    height: 40px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.headTextBold{
+    font-weight :bold;
+}

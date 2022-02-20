@@ -1,0 +1,36 @@
+<div>
+    <div class="loginUser">Hello {{this.loginUserName}},</div>
+    <h5 class="pt-1">{{pageTitle}}</h5>
+    <hr class="col-6"/>
+    <pre></pre>
+    <div class="row p-15 mt-15">
+      <div  *ngIf="!customers || customers.length === 0">
+          לא נמצאו לקוחות
+      </div>
+     <div *ngIf="customers.length > 0">
+    
+        <div class="row p-15 Header">
+        <span class="col">First Name</span>
+        <span class="col">Last Name</span>
+        <span class="col">ID</span>
+        <span class="col">City</span>
+        <span class="col">Streat</span>
+        <span class="col">No.</span>
+        </div> 
+        <div *ngFor="let cust of this.customers">
+          <div class="row p-15 dataItem" (click)="OnCustomerSelected(cust)">
+            <span class="col">{{cust.FirstName}}</span>
+            <span class="col">{{cust.LastName}}</span>
+            <span class="col">{{cust.id}}</span>
+            <span class="col">{{cust.address.city}}</span>
+            <span class="col">{{cust.address.streat}}</span>
+            <span class="col">{{cust.address.num}}</span>
+        </div>
+        </div>
+     </div>
+     <p></p>
+    </div>
+    <div class="row" style="background-color:#ffffff">
+      <app-contract *ngIf="this.selectedCust"  [selectedCust]="this.selectedCust"></app-contract>
+    </div>
+</div>

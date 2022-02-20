@@ -1,0 +1,30 @@
+<div class="container">
+<p class="bold">Customer: <span class="headTextBold col-2 bold">{{this.data.FirstName}} {{this.data.LastName}}</span>  Cust_id: <span class="headTextBold">{{this.data.id}}</span></p>
+<div>
+    <div class="row p-15 dataItem">
+        <span class="col">Contract NO</span>
+        <span class="col">Full Name</span>
+        <span class="col">Type</span>
+        <span class="col">Packages</span>        
+      </div>
+      <Div *ngIf="!(data.contracts)">
+          no contracts found.
+      </Div>
+
+      <Div *ngIf="(data.contracts)">
+        <div *ngFor="let contract of this.data.contracts">
+            <div class="row p-15 dataItem" (click)="OnContractSelected(contract)">
+              <span class="col">{{contract.contract_num}}</span>
+              <span class="col">{{contract.contract_name}}</span>
+              <span class="col">{{GetContractType(contract.contract_type)}}</span>
+              <span class="col" *ngIf="contract.packages">{{contract.packages.length}}</span>
+              <span class="col" *ngIf="!contract.packages">N/A</span>         
+            </div>
+          </div>
+      </Div>
+
+</div>
+
+
+</div>
+

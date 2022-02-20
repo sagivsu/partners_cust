@@ -1,0 +1,22 @@
+.dataItem{
+    height: 40px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.loginUser{
+    color:blue;
+}
+
+.Header{
+    height: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    cursor:default;;
+}
+
+div.dataItem :hover{
+    background-color: rgb(0, 183, 255);
+}
+div.dataItem :active{
+    background-color: rgb(0, 183, 255);
+}

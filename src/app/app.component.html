@@ -1,0 +1,6 @@
+
+<div class="container col-8 p-15" style="background-color:rgba(146,246,238,1)">
+    <div *ngIf="this.userDataService && this.userDataService.loginUser">{{this.userDataService.loginUser.user_name}}</div>
+    <app-login *ngIf="!this.isUserLogin" [parentRef]="this"></app-login>
+    <app-customers *ngIf="this.isUserLogin"></app-customers>
+</div>

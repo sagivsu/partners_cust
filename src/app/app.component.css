@@ -1,0 +1,11 @@
+.fieldItem
+{
+ background-color: #ffffff;
+ height: 25px;
+ padding :3px;
+ padding-left: 15px;
+ padding-right: 15px;
+ margin-right: 15px;
+ display:flexbox;
+}
+
