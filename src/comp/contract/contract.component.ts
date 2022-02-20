@@ -11,7 +11,7 @@ export class ContractComponent implements OnChanges  {
   @Input() selectedCust: any;
   
   data: any;
- 
+  selectedContract : any
 
   constructor() {
 
@@ -24,6 +24,7 @@ export class ContractComponent implements OnChanges  {
 
   OnContractSelected(contract:any){
 
+      this.selectedContract = contract;
 
   }
 

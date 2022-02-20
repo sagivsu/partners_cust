@@ -7,11 +7,8 @@
       "address":{"city":"ashkelon","streat":"Etzel","num":"45/12","mikud":"12345"},
       "contracts":[
           {"contract_num":"455423","contract_name":"avivi 22","contract_type":1,"packages":[]},
-          {"contract_num":"987656","contract_name":"golan","contract_type":2,"packages":[]}, 
-          {"contract_num":"455423","contract_name":"avivi 22","contract_type":1,"packages":[]},   
-          {"contract_num":"435465","contract_name":"avi sofer","contract_type":1,"packages":[]},
-          {"contract_num":"354576","contract_name":"rami levi","contract_type":3,"packages":[]}
-      ]
+          {"contract_num":"987656","contract_name":"golan","contract_type":2,"packages":[]}
+          ]
   },
   {
     "FirstName":"Gal",
@@ -19,18 +16,12 @@
     "id":"222222222",
     "address":{"city":"jerusalen","streat":"hadarim","num":"66/1","mikud":"22422"},
     "contracts":[
-      {"contract_num":"222222","contract_name":"bbb","contract_type":2,"packages":[]},
+      {"contract_num":"222222","contract_name":"bbb","contract_type":2,"packages":[
+        {"pkg_Name":"package 1","pkg_id" :"1234","pkg_type":1},
+        {"pkg_Name":"package 2","pkg_id" :"4321","pkg_type":1}
+        ]},
       {"contract_num":"222222","contract_name":"bbb","contract_type":2,"packages":[]}
     ]
-  },
-  {
-    "FirstName":"Avi",
-    "LastName":"Ron",
-    "id":"333333333",
-    "address":{"city":"bat-yam","streat":"dekel","num":"54/1","mikud":"35333"},
-    "contracts":[
-      {"contract_num":"333333","contract_name":"Migdal Company","contract_type":3,"packages":[]}
-    ]
-      
   }
+  
 ]
