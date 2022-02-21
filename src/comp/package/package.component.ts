@@ -26,6 +26,7 @@ export class PackageComponent implements OnChanges {
       this.data.packages.length);
 
   }
+
   ngOnChanges(changes: SimpleChanges): void {
     this.data = changes['selectedContract'].currentValue;
   }

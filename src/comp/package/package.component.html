@@ -1,6 +1,13 @@
 <div class="container" style="background-color:lightblue">
     <Div *ngIf="!this.hasPackagesData()">לא נמצאו חבילות</Div>
+
+
     <Div *ngIf="this.hasPackagesData()">
+      <div class="row p-15 Header">
+        <span class="col">Package Num</span>
+        <span class="col">Package Name</span>
+        <span class="col">Package Type</span>     
+        </div> 
         <div *ngFor="let pkg of this.data.packages">
             <div class="row p-15 dataItem">
               <span class="col">{{pkg.pkg_id}}</span>
