@@ -7,13 +7,14 @@
       "address":{"city":"ashkelon","streat":"Etzel","num":"45/12","mikud":"12345"},
       "contracts":[
           {"contract_num":"455423","contract_name":"avivi 22","contract_type":1,"packages":[
-            {"pkg_Name":"Partner Cell 1","pkg_id" :"1234","pkg_type":1},
-            {"pkg_Name":"Partnet TV","pkg_id" :"4321","pkg_type":2},
-            {"pkg_Name":"Partnet Tripel","pkg_id" :"4321","pkg_type":3}
+            {"pkg_Name":"Triple Fiber","pkg_id" :"1234","pkg_type":"מ- ₪195 לחודש"},
+            {"pkg_Name":"Partner TV","pkg_id" :"4321","pkg_type":"מ- ₪139 לחודש"},
+            {"pkg_Name":"Private Fiber","pkg_id" :"4321","pkg_type":"מ- ₪90 לחודש"}
           ]},
           {"contract_num":"987656","contract_name":"golan","contract_type":2,"packages":[
 
-            {"pkg_Name":"Partnet Tripel","pkg_id" :"4321","pkg_type":3}
+            {"pkg_Name":"5G Program","pkg_id" :"4321","pkg_type":"מ- ₪49.9 לחודש"},
+            {"pkg_Name":"Partner TV","pkg_id" :"4321","pkg_type":"מ- ₪139 לחודש"}
           ]}
           ]
   },
@@ -24,12 +25,12 @@
     "address":{"city":"jerusalen","streat":"hadarim","num":"66/1","mikud":"22422"},
     "contracts":[
       {"contract_num":"222222","contract_name":"bbb","contract_type":2,"packages":[
-        {"pkg_Name":"package 1","pkg_id" :"1234","pkg_type":1},
-        {"pkg_Name":"package 2","pkg_id" :"4321","pkg_type":1}
+        {"pkg_Name":"Basic 5G","pkg_id" :"1234","pkg_type":"מ- ₪49.9 לחודש"},
+        {"pkg_Name":"package 2","pkg_id" :"4321","pkg_type":"מ- ₪139 לחודש"}
         ]},
       {"contract_num":"222222","contract_name":"bbb","contract_type":2,"packages":[
-          {"pkg_Name":"Partnet TV","pkg_id" :"4321","pkg_type":2},
-          {"pkg_Name":"Partnet Tripel","pkg_id" :"4321","pkg_type":3}
+          {"pkg_Name":"Partner TV","pkg_id" :"4321","pkg_type":"מ- ₪49.9 לחודש"},
+          {"pkg_Name":"Private Fiber","pkg_id" :"4321","pkg_type":"מ- ₪49.9 לחודש"}
       ]}
     ]
   }
